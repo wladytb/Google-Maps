@@ -1,17 +1,19 @@
 package com.wladytb.googlemaps.modelo;
 
 public class modeloMarker {
-    String facultad, decano, logo,lat,lng;
+    String facultad, decano, logo,lat,lng,correo;
 
     public modeloMarker() {
     }
 
-    public modeloMarker(String facultad, String decano, String logo, String lat, String lng) {
+    public modeloMarker(String facultad, String decano,String correo,String logo, String lat, String lng) {
         this.facultad = facultad;
         this.decano = decano;
+        this.correo=correo;
         this.logo = logo;
         this.lat = lat;
         this.lng = lng;
+
     }
 
     public String getFacultad() {
@@ -29,6 +31,15 @@ public class modeloMarker {
     public void setDecano(String decano) {
         this.decano = decano;
     }
+
+    public String getCorreo() {
+        return correo;
+    }
+
+    public void setCorreo(String correo) {
+        this.correo = correo;
+    }
+
     public String getLogo() {
         return logo;
     }

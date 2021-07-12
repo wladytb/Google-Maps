@@ -1,67 +1,94 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent"
-    >
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:animateLayoutChanges="true"
-        android:orientation="vertical"
-        android:background="@drawable/borde"
-        >
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linerLayoutprincipal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="3dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtNameFacultad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:gravity="center"
+                android:text="nombre de la facultad"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             android:orientation="horizontal">
-            <ImageView
-                android:id="@+id/imgFacultad"
-                android:layout_width="80dp"
-                android:layout_height="85dp"
-                android:layout_alignParentStart="true"
-                android:layout_centerVertical="true"
-                android:layout_gravity="center"
-                android:src="@mipmap/ic_launcher"
-                android:padding="5dp"
-                android:layout_alignParentLeft="true"/>
 
             <LinearLayout
-                android:id="@+id/linerLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_marginLeft="5dp"
-                android:layout_toEndOf="@id/imgFacultad"
-                android:layout_toRightOf="@id/imgFacultad"
-                android:orientation="vertical">
+                android:layout_marginLeft="3dp"
+                android:orientation="horizontal">
 
-                <TextView
-                    android:id="@+id/txtNameFacultad"
+                <ImageView
+                    android:id="@+id/imgFacultad"
+                    android:layout_width="80dp"
+                    android:layout_height="85dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:padding="2dp"
+                    android:src="@mipmap/ic_launcher" />
+
+                <LinearLayout
+                    android:id="@+id/linerLayout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="6dp"
-                    android:text="nombre de la facultad"
-                    android:textColor="@color/black"
-                    android:textSize="20dp"
-                    android:textStyle="bold" />
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="3dp"
+                    android:layout_toEndOf="@id/imgFacultad"
+                    android:layout_toRightOf="@id/imgFacultad"
+                    android:orientation="vertical">
 
-                <TextView
-                    android:id="@+id/txtNameDecano"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="6dp"
-                    android:text="Decano:"
-                    android:textColor="@android:color/black"
-                    android:textSize="12dp" />
+                    <TextView
+                        android:id="@+id/txtNameDecano"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:text="Decano:"
+                        android:textColor="@android:color/black"
+                        android:textSize="12dp" />
+                    <TextView
+                        android:id="@+id/txtCorreo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:text="Correo:"
+                        android:textColor="@android:color/black"
+                        android:textSize="12dp" />
 
-                <TextView
-                    android:id="@+id/txtNameUbicacion"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="6dp"
-                    android:text="ubicación:"
-                    android:textColor="@android:color/black"
-                    android:textSize="12dp" />
+                    <TextView
+                        android:id="@+id/txtNameUbicacion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:text="ubicación:"
+                        android:textColor="@android:color/black"
+                        android:textSize="12dp" />
+                </LinearLayout>
             </LinearLayout>
+
         </RelativeLayout>
     </LinearLayout>
 

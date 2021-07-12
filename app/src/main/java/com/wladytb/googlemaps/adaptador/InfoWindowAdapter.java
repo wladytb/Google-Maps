@@ -27,12 +27,14 @@ public class InfoWindowAdapter implements GoogleMap.InfoWindowAdapter {
         View informacion = inflater.inflate(R.layout.makerpersonalizado, null);
         TextView fc = (TextView) informacion.findViewById(R.id.txtNameFacultad);
         TextView dc = (TextView) informacion.findViewById(R.id.txtNameDecano);
+        TextView cr = (TextView) informacion.findViewById(R.id.txtCorreo);
         TextView ub = (TextView) informacion.findViewById(R.id.txtNameUbicacion);
         ImageView img = (ImageView) informacion.findViewById(R.id.imgFacultad);
         fc.setText(marker.getTitle());
-        dc.setText(marker.getSnippet().split(";")[0]);
-        ub.setText(marker.getSnippet().split(";")[1]);
+        dc.setText(marker.getSnippet().split(";")[0].trim());
+        ub.setText(marker.getSnippet().split(";")[1].trim());
         Picasso.get().load(marker.getSnippet().split(";")[2].toString().trim()).into(img);
+        cr.setText(marker.getSnippet().split(";")[3].trim());
         return informacion;
     }
 }
