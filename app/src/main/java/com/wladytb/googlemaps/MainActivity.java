@@ -103,7 +103,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 "Ing. Leonardo Gonzalo Matute, M.Sc.",
                 "decanato_agropecuarias@uteq.edu.ec",
                 "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScDRZJ3wT-_O09VEvtMYqordRtqCS0z72Jyw&usqp=CAU",
-                "-1.0810259049531765", "-79.50200330824408 ");
+                "-1.0813624489354845", "-79.50302236394958");
         modeloMarker fcip = new modeloMarker(
                 "Facultad de Ciencias de la Industria y Producción",
                 "Ing. Sonnia Esther Barzola Miranda, M.Sc.",
